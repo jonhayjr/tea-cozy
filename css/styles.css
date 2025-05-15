@@ -11,6 +11,8 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    display: flex;
+    justify-content: center;
 }
 
 /*Nav*/
@@ -19,6 +21,7 @@ nav {
     flex-direction: row;
     height: 69px;
     position: fixed;
+    opacity: 0.75;
     left: 0;
     right: 0;
     border-bottom: 1px solid seashell;
@@ -34,7 +37,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-between;
-    flex-basis: 450px;
+    flex-basis: 400px;
 }
 
 .nav-link {
@@ -50,7 +53,33 @@ nav {
 }
 
 .nav-link a:active {
-    opacity: 0.85;
     font-size: 25px;
     font-weight: bold;
+}
+
+/*Header*/
+header {
+    height: 700px;
+    width: 1200px;
+    background-image: url("/img/img-mission-background.jpg");
+    background-position: center;
+    opacity: 0.6;
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.header-text {
+    background-color: black;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.header-text h2 {
+    margin-bottom: 20px;
 }
