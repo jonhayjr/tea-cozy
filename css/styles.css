@@ -11,8 +11,7 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 /*Nav*/
@@ -20,13 +19,14 @@ nav {
     display: flex;
     flex-direction: row;
     height: 69px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid seashell;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
 }
 
 .logo {
@@ -56,46 +56,38 @@ nav {
     font-weight: bold;
 }
 
+.container {
+    margin-top: 70px;
+    text-align: center;
+}
+
 /*Header*/
 header {
     height: 700px;
-    width: 1200px;
+    max-width: 1200px;
     background-image: url("/img/img-mission-background.jpg");
     background-position: center;
-    position: absolute;
-    top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 
 .header-text {
     background-color: black;
-    text-align: center;
     padding: 10px 20px;
-    width: 100%;
+    text-align: center;
 }
 
 .header-text h2 {
     margin-bottom: 20px;
 }
 
-/*Main*/
-main {
-    position: absolute;
-    top: 850px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .tea-of-the-month {
-    width: 1000px;
-    text-align: center;
-    margin-bottom: 50px;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
 }
 
 .tea-of-the-month h2 {
@@ -128,7 +120,8 @@ main {
      background-image: url("/img/img-locations-background.jpg");
      background-position: center;
      height: 500px;
-     width: 1200px;
+     max-width: 1200px;
+     margin: 0 auto;
 }
 
 .location {
@@ -138,6 +131,5 @@ main {
 
 /*Footer Section*/
 footer {
-    position: absolute;
-    top: 2100px;
+
 }
