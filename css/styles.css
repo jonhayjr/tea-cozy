@@ -20,14 +20,13 @@ nav {
     display: flex;
     flex-direction: row;
     height: 69px;
-    position: fixed;
-    opacity: 0.75;
-    left: 0;
-    right: 0;
+    position: sticky;
+    top: 0;
     border-bottom: 1px solid seashell;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .logo {
@@ -63,9 +62,8 @@ header {
     width: 1200px;
     background-image: url("/img/img-mission-background.jpg");
     background-position: center;
-    opacity: 0.6;
-    position: relative;
-    top: 75px;
+    position: absolute;
+    top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,4 +80,44 @@ header {
 
 .header-text h2 {
     margin-bottom: 20px;
+}
+
+/*Main*/
+main {
+    position: absolute;
+    top: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tea-of-the-month {
+    width: 1000px;
+    text-align: center;
+}
+
+.tea-of-the-month h2 {
+    margin-bottom: 20px;
+}
+
+.tea-of-the-month h4 {
+    margin-bottom: 25px;
+}
+
+.tea-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tea-img-item img {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.tea-img-item h4 {
+    margin-top: 10px;
 }
